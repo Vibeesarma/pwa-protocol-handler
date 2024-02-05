@@ -1,6 +1,11 @@
 import ProtocolModel from "@/components/ProtocolModel";
 
-export default function Home(props: any) {
-  console.log("🚀 ~ Home ~ props:", props);
-  return <ProtocolModel props={props} />;
+type HomeProps = {
+  searchParams: {
+    qr_data?: string;
+  };
+};
+
+export default function Home({ searchParams: { qr_data } }: HomeProps) {
+  return <ProtocolModel qr_data={qr_data} />;
 }
