@@ -693,7 +693,7 @@ export default function manifest(): MetadataRoute.Manifest {
     protocol_handlers: [
       {
         protocol: "web+pwaprotocol",
-        url: "/?%s",
+        url: "/?qr_data=%s",
       },
     ],
 
