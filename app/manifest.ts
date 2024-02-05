@@ -692,8 +692,8 @@ export default function manifest(): MetadataRoute.Manifest {
 
     protocol_handlers: [
       {
-        "protocol": "web+tea",
-        "url": "/tea?type=%s"
+        protocol: "web+pwaprotocol",
+        url: "/tea?type=%s",
       },
     ],
 
